@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("img07.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="file:///D:/%E9%87%8D%E8%A6%81%E8%B3%87%E6%96%99/Win10/Desktop/html/%E4%B8%BB%E7%95%AB%E9%9D%A2.html#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Experience</span>
+  </div>
+ 
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">過往經歷</span></h5>
+    <p>在小學時期我喜愛運動，個性上也十分活潑，國中時期參與童軍社團，學習到團體生活紀律及童軍技能、智識，並從中體會團隊合作精神。在高中時期考取兩張專業證照─工業電子丙級、儀表電子乙級，為累積社會經驗，課業之餘透過各種工讀及兼職等機會充實自我，曾經到餐飲業、會計事務所等地方打工，不僅學到基本的服務能力，練習溝通的技巧，化解客戶無理對待彼此間糾紛，體會到服務業的細心耐心與體貼是比其他行業所需更高門檻的領域，而金融科技服務業更能接觸到不同領域的各行各業的投資理財結構。期待從學校即將畢業不久的我，能夠運用在校外期間所學，配合我的熱情衝勁、認真負責的態度，轉入不同領域商學系，激勵自己不斷地充實學習，勇於挑戰不同的專業領域和技能，隨時保有虛心學習的心，是個人對於自己生涯目標的期許。</p>
+    
+    
+  </div>
+</div>
+
+<!-- Menu Container -->
+
+
+
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Thanks for your watching</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
